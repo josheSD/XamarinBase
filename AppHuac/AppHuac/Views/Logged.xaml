@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:AppHuac.Effects"
+             x:Class="AppHuac.Views.Logged"
+             NavigationPage.HasNavigationBar="False"
+             >
+
+    <ContentPage.Effects>
+        <local:StatusBarEffect
+            BackgroundColor="#FFFFFF"
+            isLight="False"
+            />
+    </ContentPage.Effects>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Image
+                Source="logo"></Image>
+            <Label
+                Text="Validando sesión..."
+                HorizontalOptions="Center"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

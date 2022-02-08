@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:AppHuac.Effects"
+             x:Class="AppHuac.Views.DashboardDetail"
+             Title="Dashboard"
+             >
+    <ContentPage.Effects>
+        <local:StatusBarEffect
+            BackgroundColor="#00B8DF"
+            isLight="False"
+            />
+    </ContentPage.Effects>
+    <StackLayout Padding="10">
+
+        <Label
+            Text="Bienvenido"
+            FontSize="Title"
+            ></Label>
+        
+    </StackLayout>
+</ContentPage>

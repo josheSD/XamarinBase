@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:AppHuac.Effects"
+             x:Class="AppHuac.Views.Login"
+             NavigationPage.HasNavigationBar="False"
+             >
+    
+    <ContentPage.Effects>
+        <local:StatusBarEffect 
+            BackgroundColor="#00B8DF"
+            isLight="False"
+            />
+    </ContentPage.Effects>
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <StackLayout BackgroundColor="#00B8DF"
+                         Padding="25,0,25,40"
+                         >
+
+                <StackLayout
+                    VerticalOptions="EndAndExpand">
+                    <Label
+                        Text="Welcome"
+                        TextColor="White"
+                        FontSize="35"
+                        FontAttributes="Bold"
+                        Margin="0,0,0,18"
+                        ></Label>
+                    <Label
+                        Text="Manage your expenses"
+                        TextColor="White"
+                        FontSize="Medium"></Label>
+                    <Label
+                        Text="seamlessly and intuitively"
+                        TextColor="White"
+                        FontSize="Medium"
+                        FontAttributes="Bold"></Label>
+
+                    <Button
+                        Text="Sign in with Azure AD"
+                        TextTransform="None"
+                        FontSize="Body"
+                        TextColor="#3E3E3E"
+                        BackgroundColor="White"
+                        WidthRequest="200"
+                        CornerRadius="15"
+                        Margin="0,40,0,20"
+                        Command="{Binding LoginAd}"
+                        ></Button>
+
+                    <StackLayout
+                        Orientation="Horizontal"
+                        HorizontalOptions="Center"
+                        >
+
+                        <Label
+                            Text="Already have an account?"
+                            TextColor="#3E3E3E"
+                        ></Label>
+                        <Label
+                            Text="Sign in"
+                            FontAttributes="Bold"
+                            TextColor="White"></Label>
+
+                    </StackLayout>
+
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+    
+</ContentPage>
